@@ -6,9 +6,9 @@ module.exports = {
         roboto: ["Roboto", "sans-serif"],
       },
       colors: {
-        primary: "#0a3d62",
-        secondary: "#4da8da",
-        accent: "#f39c12",
+        primary: "#000000",
+        secondary: "#ffffff",
+        accent: "#FFD700",
       },
       textDecorationColor: {
         accent: "#f39c12",
