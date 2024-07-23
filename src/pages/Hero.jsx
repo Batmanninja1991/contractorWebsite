@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import emailjs from "emailjs-com";
 import bgImg from "../assets/floor-333165_1920.jpg";
 import { FaHome } from "react-icons/fa";
@@ -90,14 +90,9 @@ const Hero = () => {
     };
 
     emailjs
-      .send(
-        "service_xqijs2p", // Replace with your EmailJS service ID
-        "template_thzg7pi", // Replace with your EmailJS template ID
-        templateParams,
-        {
-          /** "WnKNRLAWCizDV126m" */
-        } // Replace with your EmailJS user ID
-      )
+      .send("service_xqijs2p", "template_thzg7pi", templateParams, {
+        /** "WnKNRLAWCizDV126m" */
+      })
       .then(
         (response) => {
           console.log("SUCCESS!", response.status, response.text);
@@ -121,27 +116,31 @@ const Hero = () => {
     }));
   };
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
-    <div className="w-full h-full">
+    <div className="w-full h-full overflow-x-hidden">
       <section
         id="home"
         className="relative w-full h-screen bg-cover bg-center"
         style={{ backgroundImage: `url(${bgImg})` }}
       >
-        <div className="absolute w-full h-full bg-gradient-to-b from-black/60 to-transparent"></div>
-        <div className="relative pt-36 z-10">
+        <div className="absolute w-full h-full bg-gradient-to-b from-black/80 via-black/50 to-transparent"></div>
+        <div className="relative pt-32 md:pt-44 z-10">
           <div
-            className="p-6 lg:p-10 flex flex-col gap-4 md:gap-10 justify-center items-center text-center"
+            className="md:w-3/4 mx-auto p-6 lg:p-10 flex flex-col gap-10 justify-center items-center text-center"
             data-aos="zoom-out"
             data-aos-offset="100"
             data-aos-duration="2000"
             data-aos-easing="ease-in-out"
             data-aos-once="true"
           >
-            <h1 className="text-4xl lg:text-6xl font-semibold tracking-wide text-accent">
+            <h1 className="text-5xl lg:text-6xl font-semibold tracking-wide text-accent">
               Your Trusted Construction Experts
             </h1>
-            <p className="leading-relaxed text-base lg:text-xl tracking-widest max-w-3xl text-white">
+            <p className="leading-relaxed text-lg lg:text-2xl tracking-widest max-w-4xl text-white border-yellow-400 border-double border-2 p-6">
               From minor repairs to major construction projects, we at{" "}
               <span className="font-bold text-accent text-xl">
                 Construction, LLC
@@ -152,7 +151,7 @@ const Hero = () => {
             </p>
             <button
               onClick={() => setIsModalOpen(true)}
-              className="mt-8 text-xl rounded-xl px-8 py-4 font-bold shadow-lg bg-accent hover:bg-black hover:text-accent hover:scale-105"
+              className="sm:mt-10 mx-auto md:mt-44 text-xl rounded-xl px-8 py-4 font-bold shadow-lg bg-accent hover:bg-black hover:text-accent hover:scale-105"
             >
               Schedule Your Free Quote Today!
             </button>
@@ -175,7 +174,7 @@ const Hero = () => {
             <div
               className="flex flex-col w-11/12 mx-auto items-center bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition"
               data-aos="fade-left"
-              data-aos-offset="100"
+              data-aos-offset="50"
               data-aos-duration="1500"
               data-aos-easing="ease-in-out"
               data-aos-once="true"
@@ -196,7 +195,7 @@ const Hero = () => {
             <div
               className="flex flex-col w-11/12 mx-auto items-center bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition h-full"
               data-aos="fade-right"
-              data-aos-offset="100"
+              data-aos-offset="50"
               data-aos-duration="1500"
               data-aos-easing="ease-in-out"
               data-aos-once="true"
@@ -217,7 +216,7 @@ const Hero = () => {
             <div
               className="flex flex-col w-11/12 mx-auto items-center bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition h-full"
               data-aos="fade-left"
-              data-aos-offset="100"
+              data-aos-offset="50"
               data-aos-duration="1500"
               data-aos-easing="ease-in-out"
               data-aos-once="true"
@@ -238,7 +237,7 @@ const Hero = () => {
             <div
               className="flex flex-col w-11/12 mx-auto items-center bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition"
               data-aos="fade-right"
-              data-aos-offset="100"
+              data-aos-offset="50"
               data-aos-duration="1500"
               data-aos-easing="ease-in-out"
               data-aos-once="true"
@@ -258,7 +257,7 @@ const Hero = () => {
             <div
               className="flex flex-col w-11/12 mx-auto items-center bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition"
               data-aos="fade-left"
-              data-aos-offset="100"
+              data-aos-offset="50"
               data-aos-duration="1500"
               data-aos-easing="ease-in-out"
               data-aos-once="true"
@@ -276,7 +275,7 @@ const Hero = () => {
             <div
               className="flex flex-col w-11/12 mx-auto items-center bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition"
               data-aos="fade-right"
-              data-aos-offset="100"
+              data-aos-offset="50"
               data-aos-duration="1500"
               data-aos-easing="ease-in-out"
               data-aos-once="true"
@@ -298,8 +297,8 @@ const Hero = () => {
       <section id="about" className="w-full lg:h-full py-14 bg-white">
         <div
           className="max-w-9xl mx-auto px-4 text-center"
-          data-aos="zoom-in"
-          data-aos-offset="100"
+          data-aos="fade-in"
+          data-aos-offset="50"
           data-aos-duration="1500"
           data-aos-easing="ease-in-out"
           data-aos-once="true"

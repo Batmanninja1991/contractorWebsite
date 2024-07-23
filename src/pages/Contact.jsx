@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import emailjs from "emailjs-com";
 
 const Contact = () => {
@@ -24,19 +24,13 @@ const Contact = () => {
     };
 
     emailjs
-      .send(
-        "service_xqijs2p", // Replace with your EmailJS service ID
-        "template_thzg7pi", // Replace with your EmailJS template ID
-        templateParams,
-        {
-          /** "WnKNRLAWCizDV126m" */
-        } // Replace with your EmailJS user ID
-      )
+      .send("service_xqijs2p", "template_thzg7pi", templateParams, {
+        /** "WnKNRLAWCizDV126m" */
+      })
       .then(
         (response) => {
           console.log("SUCCESS!", response.status, response.text);
           window.alert("Your message has been sent successfully!");
-          onClose(); // Close the modal on successful submission
         },
         (error) => {
           console.log("FAILED...", error);
@@ -54,6 +48,10 @@ const Contact = () => {
       [name]: value,
     }));
   };
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <section id="contact" className="w-full lg:h-full py-32 bg-gray-200">
@@ -167,4 +165,3 @@ const Contact = () => {
 };
 
 export default Contact;
-

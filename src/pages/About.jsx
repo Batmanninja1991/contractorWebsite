@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import personalImage from "../assets/construction-6475775_1920.jpg";
 
 const About = () => {
@@ -49,15 +49,21 @@ const About = () => {
     );
   };
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
-      <section id="about" className="w-full lg:h-full py-32 bg-gray-200">
-        <div className="max-w-9xl mx-auto px-4 text-center"
-        data-aos="zoom-in"
-        data-aos-offset="100"
-        data-aos-duration="1500"
-        data-aos-easing="ease-in-out"
-        data-aos-once="true">
+      <section id="about" className="w-full lg:h-full py-32 bg-gray-200 overflow-x-hidden">
+        <div
+          className="max-w-9xl mx-auto px-4 text-center overflow-x-hidden"
+          data-aos="fade-in"
+          data-aos-offset="100"
+          data-aos-duration="1500"
+          data-aos-easing="ease-in-out"
+          data-aos-once="true"
+        >
           <h2 className="text-4xl py-10 font-semibold mb-8 text-primary custom-underline">
             About Us
           </h2>
@@ -71,10 +77,16 @@ const About = () => {
               Who We Are
             </h3>
             <p className="text-lg md:w-3/4 mx-auto">
-              We are a family-owned general contracting business with over 20 years of experience. Our team is dedicated to providing exceptional service and ensuring your construction projects are completed smoothly.
+              We are a family-owned general contracting business with over 20
+              years of experience. Our team is dedicated to providing
+              exceptional service and ensuring your construction projects are
+              completed smoothly.
             </p>
             <p className="text-lg md:w-3/4 mx-auto bg-gray-200 text-gray-700 my-4 p-4 rounded-xl">
-              Our commitment to quality and customer satisfaction is unwavering. We believe in treating our customers like family, ensuring every job is done right the first time. Trust us to handle all your construction needs with professionalism and care.
+              Our commitment to quality and customer satisfaction is unwavering.
+              We believe in treating our customers like family, ensuring every
+              job is done right the first time. Trust us to handle all your
+              construction needs with professionalism and care.
             </p>
           </div>
         </div>

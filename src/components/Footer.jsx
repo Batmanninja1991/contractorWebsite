@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {/* Contact Info */}
           <div className="flex flex-col justify-between">
-            <h3 className="text-xl lg:text-2xl underline underline-offset-4 font-semibold mb-4">
+            <h3 className="text-xl lg:text-2xl underline underline-offset-4 font-semibold mb-6">
               Contact Us
             </h3>
             <a
@@ -25,7 +25,7 @@ const Footer = () => {
               info@ConstructionLLC.com
             </a>
             <a
-              traget="_blank"
+              target="_blank"
               href="https://www.google.com/maps"
               className="mb-2 hover:underline hover:text-accent"
             >
@@ -35,10 +35,10 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-xl lg:text-2xl underline underline-offset-4 font-semibold mb-4">
+            <h3 className="text-xl lg:text-2xl underline underline-offset-4 font-semibold mb-6">
               Quick Links
             </h3>
-            <ul className="flex gap-10 md:grid grid-cols-2 justify-center items-center md:gap-2 md:space-y-2">
+            <ul className="flex flex-col justify-center items-center gap-4 md:gap-6">
               <li>
                 <Link to="/" className="hover:underline hover:text-accent">
                   Home
@@ -70,17 +70,17 @@ const Footer = () => {
 
           {/* Social Media */}
           <div>
-            <h3 className="text-xl lg:text-2xl underline underline-offset-4 font-semibold mb-4">
+            <h3 className="text-xl lg:text-2xl underline underline-offset-4 font-semibold mb-10">
               Follow Us
             </h3>
-            <div className="flex justify-center space-x-6">
+            <div className="flex justify-center space-x-10">
               <a
                 href="https://facebook.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-accent"
               >
-                <FaFacebookF size={30} />
+                <FaFacebookF size={40} />
               </a>
               <a
                 href="https://twitter.com"
@@ -88,7 +88,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 className="hover:text-accent"
               >
-                <FaTwitter size={30} />
+                <FaTwitter size={40} />
               </a>
               <a
                 href="https://instagram.com"
@@ -96,7 +96,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 className="hover:text-accent"
               >
-                <FaInstagram size={30} />
+                <FaInstagram size={40} />
               </a>
             </div>
           </div>

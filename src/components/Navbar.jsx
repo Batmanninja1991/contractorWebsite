@@ -23,15 +23,13 @@ const Navbar = () => {
   return (
     <div className="w-full h-[125px] bg-secondary fixed top-0 left-0 z-40">
       {/* Navbar */}
-      <div className="h-full flex justify-between items-center">
+      <div className="h-full flex justify-between xl:px-20 items-center">
         <div className="z-50">
-          <Link
-            to="/"
-          >
-            <img src={logo} className="w-[275px]" alt="Logo" />
-          </Link>
+          <a href="https://contractorllc.davidshawwebdesign.com">
+            <img src={logo} className="w-[275px] md:w-[200px]" alt="Logo" />
+          </a>
         </div>
-        <div className="hidden md:flex gap-8 lg:gap-20">
+        <div className="hidden md:flex gap-8 lg:gap-20 pt-10">
           <ul className="flex gap-8 lg:gap-20 text-primary">
             <li>
               <Link to="/" onClick={handleLinkClick}>
@@ -65,7 +63,7 @@ const Navbar = () => {
         </div>
         <button
           onClick={() => setIsModalOpen(true)}
-          className="hidden md:block bg-accent hover:bg-primary hover:text-accent text-lg rounded-xl mr-2 px-4 py-2 font-bold hover:scale-105"
+          className="hidden md:block bg-accent hover:bg-primary hover:text-accent text-lg rounded-xl mr-2 px-4 py-2 mt-10 font-bold hover:scale-105"
         >
           Free Estimates
         </button>

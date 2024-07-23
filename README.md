@@ -1,9 +1,24 @@
-# React + Vite
+<h1>Construction Website</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a professional and responsive construction website designed to showcase the services, portfolio, and contact information of a construction company. The website is built with modern web development technologies and best practices to ensure a seamless user experience.
 
-Currently, two official plugins are available:
+<h2>Features</h2>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh# contractorWebsite
-# contractorWebsite
+Home page with an overview of the company and its services.<br/>
+Services page detailing the various services offered.<br/>
+Portfolio page showcasing completed projects.<br/>
+About Us page with company history and team members.<br/>
+Contact page with a contact form.<br/>
+Responsive design for mobile, tablet, and desktop devices.<br/>
+SEO optimized.<br/>
+Fast loading times.<br/>
+
+<h2>Technologies Used</h2>
+
+<p>Front-end: React, Tailwind CSS</p>
+<p>Build Tool: Vite</p>
+<p>Deployment: Hostinger</p>
+
+<h3>Contact</h3>
+
+David Shaw - @davidshawwebdesign - davidshawwebdesign@gmail.com

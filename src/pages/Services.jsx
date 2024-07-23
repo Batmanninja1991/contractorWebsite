@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { FaHome } from "react-icons/fa";
 import { IoBusiness } from "react-icons/io5";
 import { MdOutlineEmergency } from "react-icons/md";
@@ -7,13 +7,17 @@ import { FaWrench } from "react-icons/fa";
 import { BsTools } from "react-icons/bs";
 
 const Services = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <section id="services" className="w-full lg:h-full py-32 bg-gray-200">
       <div className="max-w-9xl mx-auto px-4 text-center">
         <h2 className="text-4xl py-10 font-semibold mb-8 text-primary custom-underline">
           Our Services
         </h2>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 overflow-x-hidden">
           <div
             className="flex flex-col w-11/12 mx-auto items-center bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition"
             data-aos="fade-left"
@@ -44,7 +48,7 @@ const Services = () => {
           <div
             className="flex flex-col w-11/12 mx-auto items-center bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition h-full"
             data-aos="fade-right"
-            data-aos-offset="100"
+            data-aos-offset="50"
             data-aos-duration="1500"
             data-aos-easing="ease-in-out"
             data-aos-once="true"
@@ -71,7 +75,7 @@ const Services = () => {
           <div
             className="flex flex-col w-11/12 mx-auto items-center bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition h-full"
             data-aos="fade-left"
-            data-aos-offset="100"
+            data-aos-offset="50"
             data-aos-duration="1500"
             data-aos-easing="ease-in-out"
             data-aos-once="true"
@@ -98,7 +102,7 @@ const Services = () => {
           <div
             className="flex flex-col w-11/12 mx-auto items-center bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition"
             data-aos="fade-right"
-            data-aos-offset="100"
+            data-aos-offset="50"
             data-aos-duration="1500"
             data-aos-easing="ease-in-out"
             data-aos-once="true"
@@ -122,7 +126,7 @@ const Services = () => {
           <div
             className="flex flex-col w-11/12 mx-auto items-center bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition"
             data-aos="fade-left"
-            data-aos-offset="100"
+            data-aos-offset="50"
             data-aos-duration="1500"
             data-aos-easing="ease-in-out"
             data-aos-once="true"
@@ -144,7 +148,7 @@ const Services = () => {
           <div
             className="flex flex-col w-11/12 mx-auto items-center bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition"
             data-aos="fade-right"
-            data-aos-offset="100"
+            data-aos-offset="50"
             data-aos-duration="1500"
             data-aos-easing="ease-in-out"
             data-aos-once="true"
