@@ -296,7 +296,7 @@ const Hero = () => {
 
       <section id="about" className="w-full lg:h-full py-14 bg-white">
         <div
-          className="max-w-9xl mx-auto px-4 text-center"
+          className="max-w-7xl mx-auto px-4 text-center"
           data-aos="fade-in"
           data-aos-offset="50"
           data-aos-duration="1500"

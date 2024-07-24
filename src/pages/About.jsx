@@ -55,7 +55,10 @@ const About = () => {
 
   return (
     <>
-      <section id="about" className="w-full lg:h-full py-32 bg-gray-200 overflow-x-hidden">
+      <section
+        id="about"
+        className="w-full lg:h-full py-32 bg-gray-200 overflow-x-hidden"
+      >
         <div
           className="max-w-9xl mx-auto px-4 text-center overflow-x-hidden"
           data-aos="fade-in"
@@ -67,11 +70,11 @@ const About = () => {
           <h2 className="text-4xl py-10 font-semibold mb-8 text-primary custom-underline">
             About Us
           </h2>
-          <div className="flex flex-col w-11/12 mx-auto items-center bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+          <div className="flex flex-col w-11/12 max-w-6xl mx-auto items-center bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
             <img
               src={personalImage}
               alt="About Us"
-              className="w-full mx-auto mb-8 rounded-lg shadow-md"
+              className="mx-auto mb-16 rounded-lg shadow-md"
             />
             <h3 className="text-4xl font-semibold mb-4 text-primary">
               Who We Are

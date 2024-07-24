@@ -29,44 +29,44 @@ const Navbar = () => {
             <img src={logo} className="w-[275px] md:w-[200px]" alt="Logo" />
           </a>
         </div>
-        <div className="hidden md:flex gap-8 lg:gap-20 pt-10">
+        <div className="hidden md:flex justify-center items-center gap-8 lg:gap-20">
           <ul className="flex gap-8 lg:gap-20 text-primary">
             <li>
               <Link to="/" onClick={handleLinkClick}>
-                <p className="hover:underline decoration-accent decoration-4 underline-offset-4 text-xl font-light hover:scale-105">
+                <p className="hover:underline decoration-accent decoration-4 underline-offset-4 text-xl font-medium hover:scale-105">
                   Home
                 </p>
               </Link>
             </li>
             <li>
               <Link to="/services" onClick={handleLinkClick}>
-                <p className="hover:underline decoration-accent decoration-4 underline-offset-4 text-xl font-light hover:scale-105">
+                <p className="hover:underline decoration-accent decoration-4 underline-offset-4 text-xl font-medium hover:scale-105">
                   Services
                 </p>
               </Link>
             </li>
             <li>
               <Link to="/about" onClick={handleLinkClick}>
-                <p className="hover:underline decoration-accent decoration-4 underline-offset-4 text-xl font-light hover:scale-105">
+                <p className="hover:underline decoration-accent decoration-4 underline-offset-4 text-xl font-medium hover:scale-105">
                   About
                 </p>
               </Link>
             </li>
             <li>
               <Link to="/contact" onClick={handleLinkClick}>
-                <p className="hover:underline decoration-accent decoration-4 underline-offset-4 text-xl font-light hover:scale-105">
+                <p className="hover:underline decoration-accent decoration-4 underline-offset-4 text-xl font-medium hover:scale-105">
                   Contact
                 </p>
               </Link>
             </li>
           </ul>
         </div>
-        <button
+        <div><button
           onClick={() => setIsModalOpen(true)}
-          className="hidden md:block bg-accent hover:bg-primary hover:text-accent text-lg rounded-xl mr-2 px-4 py-2 mt-10 font-bold hover:scale-105"
+          className="hidden md:block bg-accent hover:bg-primary hover:text-accent text-lg rounded-xl mr-2 px-6 py-4 font-bold hover:scale-105"
         >
           Free Estimates
-        </button>
+        </button></div>
         <Modal isOpen={isModalOpen} onClose={handleCloseModal} />
         <div
           className="flex justify-center items-center gap-4 md:hidden z-50 text-primary pr-4"
